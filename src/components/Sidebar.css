@@ -1,0 +1,84 @@
+.Sidebar{
+  display:flex;
+}
+h5{
+  text-decoration: none;
+}
+.body
+{
+  flex:1;
+}
+.link_text{
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.sidebarcontainer{
+    height:100vh;
+    position: sticky;
+    top:0;
+    left:0;
+    display: flex;
+    background-color:  #11101d;
+
+}
+
+.sidebar{
+    display: flex;
+    width: 15rem;
+    height:95%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 12px;
+    background-color: #1c1c24;
+    transition: all 0.4s ease;
+}
+
+.menu_icons{
+    border-radius:5px;
+    width: 45px;
+    height: 45px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.items
+{
+   display: flex;
+   padding: 6px,10px,30px,10px;
+   margin-top: 20px;
+   margin-bottom: 15px;
+   align-items: center;
+   text-decoration: none;
+   justify-content: flex-start;
+   color: white;
+
+}
+
+a:link{
+  text-decoration: none;
+}
+
+.icon{
+  margin-right: 0.1rem;
+  size: 45px;
+}
+
+.addr{
+   display: flex;
+   padding-left: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-right: 20px;
+   max-width: 130px;
+   margin-top: 5rem;
+   margin-bottom: 15px;
+   align-items: center;
+   text-decoration: none;
+   justify-content: flex-start;
+   border:1px solid white;
+   color: white;
+}
