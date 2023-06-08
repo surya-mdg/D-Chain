@@ -1,3 +1,4 @@
+require('dotenv').config();
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import CountBox from './CountBox';
@@ -11,7 +12,7 @@ import { Web3Provider } from '@ethersproject/providers';
 import abi from "../utils/supplychain.json";
 
 const getEthereumObject = () => window.ethereum;
-const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+const contractAddress = process.env.CONTRACT_ADD;
 const contractABI = abi.abi;
 let supplyChainContract;
 
