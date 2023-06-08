@@ -1,10 +1,10 @@
-require('dotenv').config();
+
 import React,{useState,useEffect} from 'react';
 import  '../components/pages.css'
 import EditField from './EditField';
 import ChooseFile from './chooseFile';
 import { NFTStorage, File } from 'nft.storage'
-const client = new NFTStorage({ token: process.env.NFTSTORAGE_TOKEN })
+const client = new NFTStorage({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweEQyRGFBOTZkMTE2MmQ0MDEwM0I2N2Y1NTlCRDUzNTc4MUE0OTA1MGYiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTY4MDc5MDQ0MTcxNCwibmFtZSI6IkRlY2VudHJhbGl6ZWQtUGludGVyZXN0In0.Y5PmtHaI1GkUA6GqAT4QWP2Bp8rwGcR3mrIumFnZMAo" })
 import { HelpOutlineTwoTone } from '@mui/icons-material';
 //import passimg from '../assets/passimg.jpg';
 
@@ -15,7 +15,7 @@ import { Web3Provider } from '@ethersproject/providers';
 import abi from "../utils/supplychain.json";
 
 const getEthereumObject = () => window.ethereum;
-const contractAddress = process.env.CONTRACT_ADD;
+const contractAddress = "0xB6f37486d340692741F86d96fFE589173b93C849";
 const contractABI = abi.abi;
 let supplyChainContract;
 

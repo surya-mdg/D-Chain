@@ -1,4 +1,4 @@
-require('dotenv').config();
+
 import React, {useState} from 'react'
 import {BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom';
@@ -18,7 +18,7 @@ import * as buffer from "buffer";
 window.Buffer = buffer.Buffer;
 
 const getEthereumObject = () => window.ethereum;
-const contractAddress = process.env.CONTRACT_ADD; //Address needs to be updated also in Donations.jsx, Dashboard.jsx & Details.jsx
+const contractAddress = "0xB6f37486d340692741F86d96fFE589173b93C849"; //Address needs to be updated also in Donations.jsx, Dashboard.jsx & Details.jsx
 const contractABI = abi.abi;
 
 //------------------------Ethereum Imports------------------------

@@ -1,11 +1,11 @@
-require('dotenv').config();
+
 import React from 'react';
 import { ethers } from "ethers";
 import { Web3Provider } from '@ethersproject/providers';
 import abi from "../utils/supplychain.json";
 
 const getEthereumObject = () => window.ethereum;
-const contractAddress = process.env.CONTRACT_ADD;
+const contractAddress = "0xB6f37486d340692741F86d96fFE589173b93C849";
 const contractABI = abi.abi;
 let supplyChainContract;
 

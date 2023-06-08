@@ -1,4 +1,4 @@
-require('dotenv').config();
+
 import React, {useState} from 'react';
 import  '../components/pages.css';
 
@@ -11,7 +11,7 @@ import * as buffer from "buffer";
 import SearchResult from './SearchResult';
 window.Buffer = buffer.Buffer;
 
-const contractAddress = process.env.CONTRACT_ADD;
+const contractAddress = "0xB6f37486d340692741F86d96fFE589173b93C849";
 const contractABI = abi.abi;
 
 //------------------------Ethereum Imports------------------------
